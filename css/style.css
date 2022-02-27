@@ -11,7 +11,9 @@ html {
 body {
   background-color: #fdfdfd;
   width: 100%;
+
   overflow: auto;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -19,7 +21,7 @@ h1 {
 }
 
 .h2-card {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .main-background {
@@ -27,16 +29,17 @@ h1 {
   /* background-image: url(https://picsum.photos/id/1025/200/300); */
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(189, 91, 62);
+  /* background-color: rgb(189, 91, 62); */
+  background-color: rgba(147, 168, 140, 0.623);
   background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .next-activities {
-  height: 30rem;
-  background-color: rgb(189, 159, 62);
+  background-color: rgb(216, 213, 204);
   background-size: 100%;
   display: flex;
   justify-content: flex-start;
@@ -45,8 +48,8 @@ h1 {
 }
 
 .old-activities {
-  height: 30rem;
-  background-color: rgb(97, 161, 77);
+  /* height: 30rem; */
+  background-color: rgba(147, 168, 140, 0.623);
   background-size: 100%;
   display: flex;
   justify-content: flex-start;
@@ -54,11 +57,20 @@ h1 {
   padding: 5rem;
 }
 
-.img-card {
-  background-image: url(https://picsum.photos/id/1025/200/300);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.about {
+  height: 30rem;
+  background-color: rgba(139, 114, 139, 0.329);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 
-
+.about2 {
+  height: 25rem;
+  background-color: rgba(92, 86, 89, 0.192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }

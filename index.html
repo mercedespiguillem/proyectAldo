@@ -22,7 +22,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">ALDO</a>
+          <a class="navbar-brand" href="index.html">LOGO</a>
           <!-- Menu hamburguesa -->
           <button
             class="navbar-toggler"
@@ -36,15 +36,26 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-5 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active p-3"
+                  aria-current="page"
+                  href="index.html"
                   >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active p-3"
+                  aria-current="page"
+                  href="./pages/about.html"
+                  >Nosotros</a
                 >
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link active dropdown-toggle"
+                  class="nav-link active dropdown-toggle p-3"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -53,19 +64,26 @@
                   >Actividades</a
                 >
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Mesas redondas</a></li>
                   <li>
-                    <a class="dropdown-item" href="#"
-                      >Micropresentaciones de divulgacion</a
+                    <a class="dropdown-item" href="#act"
+                      >Nuestras actividades</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Conferencias</a></li>
-                  <li><a class="dropdown-item" href="#">Clases</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#act1"
+                      >Actividades realizadas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#act2"
+                      >Proximas actividades</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link active dropdown-toggle"
+                  class="nav-link active dropdown-toggle p-3"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -83,7 +101,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a
+                  class="nav-link active p-3"
+                  aria-current="page"
+                  href="./pages/contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -95,143 +116,253 @@
     <main class="container-fluid main-background p-4">
       <h1>Ateneo de Neuropsicología y Neurociencias</h1>
     </main>
-    <section class="container-fluid p-0">
-      <div class="next-activities">
-        <h2>Proximas actividades</h2>
+    <section id="act" class="container-fluid">
+      <div class="row m-5">
+        <h2 class="col border-bottom">Nuestras actividades</h2>
       </div>
-
-      <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Actividades realizadas</h2>
-
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-            >
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-              >
-                <h2 class="pt-3 mt-3 mb-3 display-6 lh-1 fw-bold h2-card">
-                  Encuentro “Lxs psicólogxs y la clínica neuropsicológica”
-                </h2>
-                <!-- https://youtu.be/Rthv5fefarg -->
-                <ul class="d-flex list-unstyled mt-auto">
+      <!-- CARROUSEL CON TIPOS DE ACTIVIDADES -->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/id/278/1000/300"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h2>Mesas redondas</h2>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/11/1000/300"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h2>Conferencias</h2>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/779/1000/300"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h2>Micropresentaciones de divulgacion</h2>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/1015/1000/300"
+              class="d-block w-100"
+              alt=""
+            />
+            <div class="container">
+              <div class="carousel-caption text-center">
+                <h2>Clases</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <div id="act1" class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Actividades realizadas</h2>
+      <!-- PRIMERA CARD -->
+      <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card h-100 bg-secondary">
+            <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-3 mt-3 mb-5">
+                Encuentro “Lxs psicólogxs y la clínica neuropsicológica”
+              </h2>
+              <a href="https://youtu.be/Rthv5fefarg"
+                ><button class="btn btn-light w-25 m-2 align-items-end">
+                  Ver
+                </button>
+              </a>
+              <!-- <ul class="d-flex list-unstyled mt-auto">
                   <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill" />
-                    </svg>
                     <small>2679 al 16-11-21 2708 al 25-11-21</small>
                   </li>
-                </ul>
-              </div>
+                </ul> -->
             </div>
           </div>
-
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-            >
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-              >
-                <h2 class="pt-3 mt-3 mb-3 display-6 lh-1 fw-bold h2-card">
-                  Abordaje interdisciplinario del paciente con trastornos
-                  neuropsicológicos
-                </h2>
-
-                <!-- https://www.youtube.com/watch?v=48J21ZW4KMI&amp;t=2304s -->
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill" />
-                    </svg>
-                    <small>2484 al 16-11-21 2515 al 25-12-21</small>
-                  </li>
-                </ul>
-              </div>
+        </div>
+        <!-- SEGUNDA CARD -->
+        <div class="col">
+          <div class="card bg-secondary">
+            <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-3 mt-3 mb-3">
+                Abordaje interdisciplinario del paciente con trastornos
+                neuropsicológicos.
+              </h2>
+              <a href="https://youtu.be/48J21ZW4KMI"
+                ><button class="btn btn-light w-25 m-2">Ver</button>
+              </a>
+              <!-- <small class="d-flex align-items-center me-3 mt-auto"
+                >2484 al 16-11-21 2515 al 25-12-21</small
+              > -->
             </div>
           </div>
-
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-            >
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+        </div>
+        <!-- TERCERA CARD -->
+        <div class="col">
+          <div class="card bg-secondary">
+            <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-3 mt-3 mb-3">
+                Encuentros sobre Neuropsicología de la demencia - Abordaje
+                interdisciplinario en diagnóstico Parte I.
+              </h2>
+              <a href="https://youtu.be/V-G_g0CIN0A"
+                ><button class="btn btn-light w-25 m-2">Ver</button>
+              </a>
+              <small class="d-flex align-items-center me-2"
+                >771 al 16-11-21
+              </small>
+              <small class="d-flex align-items-center me-3"
+                >825 al 25-12-21</small
               >
-                <h2 class="pt-3 mt-3 mb-3 display-6 lh-1 fw-bold h2-card">
-                  Encuentros sobre Neuropsicología de la demencia - Abordaje
-                  interdisciplinario en diagnóstico Parte 1
-                </h2>
-                <!-- https://youtu.be/V-G_g0CIN0A -->
-
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill" />
-                    </svg>
-                    <small>771 al 16-11-21 </small>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill" />
-                    </svg>
-                    <small>825 al 25-12-21</small>
-                  </li>
-                  
-                </ul>
-              </div>
             </div>
           </div>
-
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
-            >
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-              >
-                <h2 class="pt-3 mt-3 mb-3 display-6 lh-1 fw-bold h2-card">
-                  Encuentros sobre Neuropsicología de la demencia - Abordaje
-                  interdisciplinario en diagnóstico Parte 2
-                </h2>
-
-                <!-- https://youtu.be/fl6Og4-ZT4E -->
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill" />
-                    </svg>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <small>379 al 5-11-21 </small>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <small>481 al 16-11-21</small>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <small>527 al 25-12-21</small>
-                  </li>
-                    
-                  
-                </ul>
-              </div>
+        </div>
+        <!-- CUARTA CARD -->
+        <div class="col">
+          <div class="card bg-secondary">
+            <div class="d-flex flex-column p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-3 mt-3 mb-3">
+                Encuentros sobre Neuropsicología de la demencia - Abordaje
+                interdisciplinario en diagnóstico Parte II.
+              </h2>
+              <a href="https://youtu.be/fl6Og4-ZT4E"
+                ><button class="btn btn-light w-25 m-2">Ver</button>
+              </a>
+              <ul class="d-flex mt-auto">
+                <li class="d-flex align-items-center me-2">
+                  <small>379 al 5-11-21 </small>
+                </li>
+                <li class="d-flex align-items-center me-2">
+                  <small>481 al 16-11-21</small>
+                </li>
+                <li class="d-flex align-items-center me-2">
+                  <small>527 al 25-12-21</small>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- 1. Inicio: quienes somos, objetivos, tipo de actividades (mesas redondas,
-      micro presentaciones de divulgación, conferencias, clases), difusión de
-      trabajos publicados, difusión de documentos. 2. Actividades realizadas:
+    </div>
+    <!-- 1. Inicio: tipo de actividades, difusión de
+      trabajos publicados, difusión de documentos. 
+      2. Actividades realizadas:
       reporte temporalmente organizado de las actividades (c/links a las
-      mismas). 3. Próximas actividades: actividades programadas. 4. Contacto y
+      mismas). 
+      3. Próximas actividades: actividades programadas. 
+      4. Contacto y
       recepción de avisos de actividades. -->
-    </section>
 
-    <section class="container-fluid p-0">
-      <div class="old-activities">
-        <h2>Actividades realizadas</h2>
-        </div>
+    <section id="act2" class="container-fluid p-0">
+      <div class="row old-activities">
+        <h2 class="row p-3">Proximas actividades</h2>
+        <ul class="col p-3">
+          <div class="card mb-2">
+            <h5 class="card-header">Actividad 1</h5>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  Titulo actividad: A well-known quote, contained in a
+                  blockquote element.
+                </p>
+                <footer class="blockquote-footer">
+                  Fecha<cite title="Source Title">2 de noviembre de 2022</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <h5 class="card-header">Actividad 2</h5>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  Titulo actividad: A well-known quote, contained in a
+                  blockquote element.
+                </p>
+                <footer class="blockquote-footer">
+                  Fecha <cite title="Source Title">2 de noviembre de 2022</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-header">Actividad 3</h5>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>
+                  Titulo actividad: A well-known quote, contained in a
+                  blockquote element.
+                </p>
+                <footer class="blockquote-footer">
+                  Fecha <cite title="Source Title">2 de noviembre de 2022</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </ul>
       </div>
     </section>
 

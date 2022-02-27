@@ -1,0 +1,33 @@
+.header__background {
+  height: 30rem;
+  /* background-image: url(https://picsum.photos/id/1025/200/300); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: rgb(189, 91, 62); */
+  background-color: rgba(147, 168, 140, 0.623);
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+// .block__nextActivities {
+//   height: 30rem;
+//   background-color: rgb(189, 159, 62);
+//   background-color: rgb(216, 213, 204);
+//   background-size: 100%;
+//   display: flex;
+//   justify-content: flex-start;
+// }
+
+.block__activities {
+  height: 30rem;
+  background-color: rgb(97, 161, 77);
+  background-color: rgba(147, 168, 140, 0.623);
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5rem;
+}

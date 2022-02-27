@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background-color: #fdfdfd;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+.about__section, .about__section--2 {
+  height: 30rem;
+  background-color: rgba(139, 114, 139, 0.329);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.about__section--2 {
+  height: 25rem;
+  background-color: rgba(92, 86, 89, 0.192);
+}
+
+.header__background {
+  height: 30rem;
+  /* background-image: url(https://picsum.photos/id/1025/200/300); */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-color: rgb(189, 91, 62); */
+  background-color: rgba(147, 168, 140, 0.623);
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.block__activities {
+  height: 30rem;
+  background-color: #61a14d;
+  background-color: rgba(147, 168, 140, 0.623);
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5rem;
+}
+/*# sourceMappingURL=style.css.map */

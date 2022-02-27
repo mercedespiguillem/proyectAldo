@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background-color: #fdfdfd;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 10rem;
+}
+/*# sourceMappingURL=global.css.map */

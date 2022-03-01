@@ -1,6 +1,6 @@
 .about__section {
   height: 30rem;
-  background-color: rgba(139, 114, 139, 0.329);
+  background-color: $aboutBackgroundColor;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,5 +10,5 @@
 .about__section--2 {
   @extend .about__section;
   height: 25rem;
-  background-color: rgba(92, 86, 89, 0.192);
+  background-color: $aboutObjetivesBackgroundColor; 
 }

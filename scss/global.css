@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: "$bodyBackgroundColor";
   width: 100%;
   overflow: auto;
   overflow-x: hidden;

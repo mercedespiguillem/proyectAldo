@@ -20,9 +20,54 @@ h1 {
   font-size: 10rem;
 }
 
+.header__background {
+  height: 30rem;
+  /* background-image: url(https://picsum.photos/id/1025/200/300); */
+  /* background-color: rgb(189, 91, 62); */
+  background-color: #a3a3679f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.card__bg {
+  background-color: #869c97ab !important;
+  color: black;
+}
+
+.block__activities {
+  background-color: #869c978c;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.form-none {
+  padding: 2rem;
+  display: none;
+  font-family: "Work Sans", sans-serif;
+}
+
 .about__section, .about__section--2 {
   height: 30rem;
-  background-color: #80f38054;
+  background-color: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,45 +82,6 @@ h1 {
 
 .about__section--2 {
   height: 25rem;
-  background-color: #3b695031;
-}
-
-.header__background {
-  height: 30rem;
-  /* background-image: url(https://picsum.photos/id/1025/200/300); */
-  /* background-color: rgb(189, 91, 62); */
-  background-color: #54d32a9f;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-}
-
-.block__activities {
-  background-color: #51644c75;
-  background-size: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 5rem;
-  height: auto;
-}
-
-.form-none {
-  padding: 2rem;
-  display: none;
-  font-family: "Work Sans", sans-serif;
+  background-color: #fdfdfd;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-// VARIABLES PARA EL FORM DE CONTACTO
+// FORM DE CONTACTO QUE APARECE AL HACER CLIC EN EL BOTON CONTACTANOS
 
 let button = document.getElementById("btnSubmit");
 button.addEventListener("click", showForm);
@@ -15,51 +15,84 @@ function createForm(element) {
   }
 
   const form = document.createElement("form");
-
-  form.className = "card row col-md-10 d-flex align-content-center m-3 p-3";
-  form.innerHTML = `<div id="form2">
-  <h2 class="titles">
-    Envianos tus datos para realizar la inscripcion
+  form.id = "form";
+  form.className = "card m-3 p-5";
+  form.innerHTML = `<div id="form2 class="container-fluid ">
+  <h2 class="titles mb-4">
+    Envianos tus datos para realizar la inscripción
   </h2>
-  <div class="row d-flex" id="">
-    <div class="col col-sm-8 col-md-6 m-2">
-      <input
+      <div class="mb-3">
+        <input required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre y apellido"
+            class="form-control form-control-lg m-2">
+      </div>
+      <div class="mb-3">
+      
+        <input required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            class="form-control form-control-lg m-2">
+      </div>
+      <div class="mb-3">
+        <input
         required
-        type="text"
-        name="Nombre y apellido"
-        id="name"
-        placeholder="Nombre y apellido"
-        class="form-control form-control-lg m-2"
-      />
-      <input
-      required
-        type="email"
-        name="Email"
-        id="email"
-        placeholder="email"
-        class="form-control form-control-lg m-2"
-      />
-      <input
-      required
         type="number"
         name="dni"
         id="dni"
         placeholder="Número de documento"
-        class="form-control form-control-lg m-2"
-      />
-      <textarea
+        class="form-control form-control-lg m-2"/>
+      </div>  
+      <div class="mb-3">
+        <input
+        required
+        type="number"
+        name="phone"
+        id="phone"
+        placeholder="Número de teléfono"
+        class="form-control form-control-lg m-2"/>
+      </div>  
+      <div class="mb-3">
+        <textarea
+        required
         type="text"
-        name="textArea"
-        id=""
-        placeholder="Escribí aquí la actividad en la que te querés inscribir"
-        class="form-control form-control-lg m-2"
-      ></textarea>
-      <button type="submit" id="btn2" class="btn btn-secondary m-3">
-        Aceptar
-      </button>
-    </div>
-  </div>
-</div>`;
+        name="message"
+        id="message"
+        placeholder="Escriba aquí su mensaje"
+        class="form-control form-control-lg m-2"></textarea>
+      </div>
+
+      <input type="submit" id="button" value="Enviar mensaje" class="btn btn-secondary m-3"/>
+</div>
+`;
 
   element.appendChild(form);
+
+  // JS DE EMAIL JS, CAMBIO DE ESTADO DEL BOTON Y ENVIO DEL MENSAJE
+
+  const btn = document.getElementById("button");
+
+  document.getElementById("form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    btn.value = "Enviando...";
+
+    const serviceID = "default_service";
+    const templateID = "template_8wkmphp";
+
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Enviar mensaje";
+        alert("El mensaje ha sido enviado con éxito!");
+      },
+      (err) => {
+        btn.value = "Enviar mensaje";
+        alert(JSON.stringify(err));
+      }
+    );
+  });
 }

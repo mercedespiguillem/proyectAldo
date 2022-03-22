@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+.card__bg {
+  background-color: $cardsBackgroundColor !important;
+  color: black;
+}
+
 // .card__oldActivities {
 //   background-color: $cardsBackgroundColor;
 // }
@@ -26,15 +31,16 @@
 // }
 
 .block__activities {
-  // background-color: rgb(97, 161, 77);
-  // background-color: $blockActivitiesBackgroundColor;
+  background-color: $blockActivitiesBackgroundColor;
   background-size: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 5rem;
   height: auto;
+  border-radius: 10px;
 }
+
 .form-none {
   padding: 2rem;
   display: none;

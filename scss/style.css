@@ -24,7 +24,7 @@ h1 {
   height: 30rem;
   /* background-image: url(https://picsum.photos/id/1025/200/300); */
   /* background-color: rgb(189, 91, 62); */
-  background-color: #a3a3679f;
+  background-color: #961a629f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,12 +38,12 @@ h1 {
 }
 
 .card__bg {
-  background-color: #869c97ab !important;
+  background-color: #4ddbbab7 !important;
   color: black;
 }
 
 .block__activities {
-  background-color: #869c978c;
+  background-color: #c0fa638c;
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,10 +59,9 @@ h1 {
   border-radius: 10px;
 }
 
-.form-none {
-  padding: 2rem;
-  display: none;
-  font-family: "Work Sans", sans-serif;
+.formulary {
+  background-color: #c0fa638c;
+  border-radius: 10px;
 }
 
 .about__section, .about__section--2 {
